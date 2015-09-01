@@ -12,8 +12,12 @@ var conf = {
 };
 
 app.all('/configure', function( req, resp ) {
-    conf.ip = req.query['ip'];
-    conf.host_header = req.query['host_header'];
+    if (req.query['ip']) {
+        conf.ip = req.query['ip'];
+    }
+    if (req.query['host_header']) {
+        conf.host_header = req.query['host_header'];
+    }
     resp.status(200).json(conf);
 });
 
