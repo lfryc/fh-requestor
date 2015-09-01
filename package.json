@@ -25,7 +25,12 @@
   },
 
   "dependencies": {
-    "express": "~3.4.4"
+    "body-parser": "1.13.3",
+    "cors": "2.7.1",
+    "express": "4.13.3",
+    "fh-mbaas-api": "5.2.0",
+    "request": "2.61.0",
+    "stream-buffers": "2.2.0"
   },
   "devDependencies": {},
   "bundleDependencies": [],
